@@ -1,40 +1,58 @@
-// material demo imports
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import Button from '@material-ui/core/Button';
-
 // default imports
-// import React, { Component } from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
 
 // material imports
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
+import IconButton from '@material-ui/core/IconButton';
+import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
+import createMuiTheme from '@material-ui/core/styles/createMuiTheme';
+
+// fontawesome imports
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faFreeCodeCamp, faCodepen, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+
+// call library.add to include icons
+library.add(faGithub, faFreeCodeCamp, faCodepen, faLinkedin);
 
 class App extends Component {
   render() {
+
+    // override materialui default theme using muithemeprovider and createmuitheme
+    const theme = createMuiTheme({
+      palette: {
+        primary: {
+          light: '#8eacbb',
+          main: '#607d8b',
+          dark: '#34515e',
+          contrastText: '#fff',
+        },
+        secondary: {
+          light: '#c1d5e0',
+          main: '#90a4ae',
+          dark: '#62757f',
+          contrastText: '#fff',
+        },
+      },
+    });
+    
     return (
-      <div className="App">
-        <AppBar position="static" color="default">
-          <Toolbar>
-            <Typography variant="title" color="inherit">
-              Chris McCauley
-            </Typography>
-          </Toolbar>
-        </AppBar>
-        {/* <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header> */}
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-        <Button variant="contained" color="primary">
-          Hello World
-        </Button>
-      </div>
+      <MuiThemeProvider theme={theme}>
+        <div className="App">
+          <AppBar position="static" color="primary">
+            <Toolbar>
+              <Typography id="titleTypography" variant="title" color="inherit">mccauley.tech</Typography>
+              <IconButton><FontAwesomeIcon icon={faCodepen} className="iconStyle" /></IconButton>
+              <IconButton><FontAwesomeIcon icon={faFreeCodeCamp} className="iconStyle" /></IconButton>
+              <IconButton><FontAwesomeIcon icon={faGithub} className="iconStyle" /></IconButton>
+              <IconButton><FontAwesomeIcon icon={faLinkedin} className="iconStyle" /></IconButton>
+            </Toolbar>
+          </AppBar>
+        </div>
+      </MuiThemeProvider>
     );
   }
 }
