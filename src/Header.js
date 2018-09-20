@@ -36,7 +36,13 @@ class Header extends Component {
   };
 
   // handles menu close after click
-  handleClose = () => {
+  handleClose = (event) => {
+    /*
+     * working on how to handle menu navigation, planning to check out react-router
+     * this console.log logs the id of the item that was clicked, can use the id to route
+     * event.currentTarget.id
+    */
+    console.log(event.currentTarget.id);
     this.setState({ anchorEl: null });
   };
 
@@ -60,19 +66,32 @@ class Header extends Component {
             anchorOrigin={{ vertical: 'top', horizontal: 'right', }} 
             transformOrigin={{ vertical: 'top', horizontal: 'right', }} 
             open={open} onClose={this.handleClose}>
-            <MenuItem onClick={this.handleClose}>
+            <MenuItem onClick={this.handleClose} id='menu-home'>
+              <Typography variant="subheading">Home</Typography>
+            </MenuItem>
+            <MenuItem onClick={this.handleClose} id='menu-portfolio'>
+              <Typography variant="subheading">Portfolio</Typography>
+            </MenuItem>
+            <MenuItem onClick={this.handleClose} id='menu-resume'>
+              <Typography variant="subheading">Resume</Typography>
+            </MenuItem>
+            <MenuItem onClick={this.handleClose} id='menu-contact'>
+              <Typography variant="subheading">Contact</Typography>
+            </MenuItem>
+            <hr />
+            <MenuItem onClick={this.handleClose} id='menu-codepen'>
               <FontAwesomeIcon icon={faCodepen} className="menuIcon" />
               <Typography variant="subheading">CodePen</Typography>
             </MenuItem>
-            <MenuItem onClick={this.handleClose}>
+            <MenuItem onClick={this.handleClose} id='menu-freecodecamp'>
               <FontAwesomeIcon icon={faFreeCodeCamp} className="menuIcon" />
               <Typography variant="subheading">freeCodeCamp</Typography>
             </MenuItem>
-            <MenuItem onClick={this.handleClose}>
+            <MenuItem onClick={this.handleClose} id='menu-github'>
               <FontAwesomeIcon icon={faGithub} className="menuIcon" />
               <Typography variant="subheading">GitHub</Typography>
             </MenuItem>
-            <MenuItem onClick={this.handleClose}>
+            <MenuItem onClick={this.handleClose} id='menu-linkedin'>
               <FontAwesomeIcon icon={faLinkedin} className="menuIcon" />
               <Typography variant="subheading">LinkedIn</Typography>
             </MenuItem>

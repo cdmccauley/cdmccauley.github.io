@@ -8,6 +8,8 @@ import createMuiTheme from '@material-ui/core/styles/createMuiTheme';
 
 // component imports
 import Header from './Header.js';
+import Landing from './Landing.js';
+import Footer from './Footer.js';
 
 class App extends Component {
 
@@ -34,6 +36,8 @@ class App extends Component {
     return (
       <MuiThemeProvider theme={theme}>
         <Header />
+        <Landing />
+        <Footer />
       </MuiThemeProvider>
     );
   }
