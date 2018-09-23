@@ -1,22 +1,39 @@
-#foot-wrap {
-  
-}
-
 #footer {
-  width: 96%;
-  margin: auto;
+  padding-top: 1vw;
+  background-color: #999;
 }
 
-#social-nav {
-  margin: 2em 0 2em 0;
+#about-me {
+  width: 92vw;
+  margin: auto;
+  padding-bottom: 1vw;
 }
 
 img {
-  margin: 2em 0 2em 0;
+  margin: 1.5em 0 1.5em 0;
   border-radius: 50%;
+}
+
+#social-nav {
+  margin: 1.5em 0 1.5em 0;
+  color: #fff;
+}
+
+#site-nav {
+  background-color: #ccc;
+  padding: 4vw;
+}
+
+#footer p, #footer h2, #footer hr {
+  color: #333;
+}
+
+#footer a {
+  color: #000;
 }
 
 ul {
   list-style-type: none;
   padding-left: 0;
+  margin-bottom: 0;
 }

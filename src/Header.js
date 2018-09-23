@@ -51,13 +51,13 @@ class Header extends Component {
     const open = Boolean(anchorEl);
     
     return (
-      <AppBar position="static" color="primary">
+      <AppBar position="static">
         <Toolbar>
-          <Typography id="titleTypography" variant="title" color="inherit">
+          <Typography id="titleTypography" variant="headline">
             mccauley.tech
           </Typography>
           <IconButton aria-owns={open ? 'menu-appbar' : null } aria-haspopup="true" 
-            onClick={this.handleMenu} color="inherit">
+            onClick={this.handleMenu}>
             <FontAwesomeIcon icon={faEllipsisV} className="iconStyle" style={{ width: 'auto', paddingLeft: '8px', paddingRight: '8px' }} />
           </IconButton>
           <Menu id="menu-appbar" anchorEl={anchorEl} 

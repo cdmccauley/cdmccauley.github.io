@@ -24,7 +24,15 @@ class App extends Component {
     // override materialui default theme using muithemeprovider and createmuitheme
     const theme = createMuiTheme({
       palette: {
-        type: 'dark',
+        type: 'dark', // tells material-ui to use a dark theme (white text)
+        primary: {
+          main: '#333', // targeting header bg
+          contrastText: '#fff',
+        },
+        background: {
+          paper: '#333', // targeting paper bg
+          default: '#666' // targeting body bg
+        }
       },
     });
     
