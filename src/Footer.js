@@ -16,7 +16,7 @@ class Footer extends Component {
       <div id="footer">
         <div id="about-me">
           <hr />
-          <img src="https://via.placeholder.com/100x100" alt="placeholder"></img>
+          <Typography id="footer-logo" variant="display1">{ "\{ m \}" }</Typography>
           <Typography>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </Typography>

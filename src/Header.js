@@ -53,12 +53,10 @@ class Header extends Component {
     return (
       <AppBar position="static">
         <Toolbar>
-          <Typography id="titleTypography" variant="headline">
-            mccauley.tech
-          </Typography>
+          <Typography id="title-typography" variant="display1">{ "\{ m \}" }</Typography>
           <IconButton aria-owns={open ? 'menu-appbar' : null } aria-haspopup="true" 
             onClick={this.handleMenu}>
-            <FontAwesomeIcon icon={faEllipsisV} className="iconStyle" style={{ width: 'auto', paddingLeft: '8px', paddingRight: '8px' }} />
+            <FontAwesomeIcon icon={faEllipsisV} className="icon-style" style={{ width: 'auto', paddingLeft: '8px', paddingRight: '8px' }} />
           </IconButton>
           <Menu id="menu-appbar" anchorEl={anchorEl} 
             anchorOrigin={{ vertical: 'top', horizontal: 'right', }} 
@@ -93,28 +91,28 @@ class Header extends Component {
 
             <a href="https://codepen.io/cdmccauley/" target="_blank" rel="noopener noreferrer">
               <MenuItem onClick={this.handleClose} id='menu-codepen'>
-                <FontAwesomeIcon icon={faCodepen} className="menuIcon" />
+                <FontAwesomeIcon icon={faCodepen} className="menu-icon" />
                 <Typography variant="subheading">CodePen</Typography>
               </MenuItem>
             </a>
 
             <a href="https://www.freecodecamp.org/cdmccauley" target="_blank" rel="noopener noreferrer">
               <MenuItem onClick={this.handleClose} id='menu-freecodecamp'>
-                <FontAwesomeIcon icon={faFreeCodeCamp} className="menuIcon" />
+                <FontAwesomeIcon icon={faFreeCodeCamp} className="menu-icon" />
                 <Typography variant="subheading">freeCodeCamp</Typography>
               </MenuItem>
             </a>
 
             <a href="https://github.com/cdmccauley" target="_blank" rel="noopener noreferrer">
               <MenuItem onClick={this.handleClose} id='menu-github'>
-                <FontAwesomeIcon icon={faGithub} className="menuIcon" />
+                <FontAwesomeIcon icon={faGithub} className="menu-icon" />
                 <Typography variant="subheading">GitHub</Typography>
               </MenuItem>
             </a>
               
             <a href="https://www.linkedin.com/in/mccauleytech/" target="_blank" rel="noopener noreferrer">
               <MenuItem onClick={this.handleClose} id='menu-linkedin'>
-                <FontAwesomeIcon icon={faLinkedin} className="menuIcon" />
+                <FontAwesomeIcon icon={faLinkedin} className="menu-icon" />
                 <Typography variant="subheading">LinkedIn</Typography>
               </MenuItem>
             </a>
