@@ -5,9 +5,8 @@
 }
 
 #about-me {
-  width: 92vw;
   margin: auto;
-  padding-bottom: 1vw;
+  padding: 0 16px 16px 16px; /* todo: make responsive (24px @ 768, ...) */
 }
 
 #footer-logo {
