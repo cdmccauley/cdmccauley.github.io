@@ -10,9 +10,9 @@ import Paper from '@material-ui/core/Paper';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHashtag } from '@fortawesome/free-solid-svg-icons';
-import { faJava, faJs, faReact, faHtml5, faCss3, faAndroid, faAngular, faSass } from '@fortawesome/free-brands-svg-icons';
+import { faJava, faJs, faReact, faHtml5, faCss3, faAndroid, faAngular, faSass, faPhp } from '@fortawesome/free-brands-svg-icons';
 
-library.add(faJava, faHashtag, faJs, faReact, faHtml5, faCss3, faSass, faAndroid, faAngular);
+library.add(faJava, faHashtag, faJs, faReact, faHtml5, faCss3, faSass, faAndroid, faAngular, faPhp);
 
 class Landing extends Component {
 
@@ -29,6 +29,7 @@ class Landing extends Component {
               <FontAwesomeIcon icon={faJava} className="icon-style" />
               <FontAwesomeIcon icon={faHashtag} className="icon-style" />
               <FontAwesomeIcon icon={faAndroid} className="icon-style" />
+              <FontAwesomeIcon icon={faPhp} className="icon-style" />
               <FontAwesomeIcon icon={faJs} className="icon-style" />
               <FontAwesomeIcon icon={faReact} className="icon-style" />
               <FontAwesomeIcon icon={faAngular} className="icon-style" />
