@@ -40,7 +40,7 @@ class Landing extends Component {
           </div>
         </Paper>
         <Typography id="intro">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Lifelong tech enthusiast and recent graduate from Davis Technical College's Information Technology program with an emphasis in Software Development. I have experience developing with Java, C#, PHP, HTML, CSS, and MySQL, for Linux, Windows, and Android. I have also spent time learning JavaScript, ES6, TypeScript, JQuery, React, Node, Angular, and Ruby and have earned certifications from CompTIA, Microsoft, and NDG. Please, have a look around to learn about me and my studies. Feel free to contact me with any questions.
         </Typography>
       </div>
 

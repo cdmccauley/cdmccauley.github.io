@@ -1,6 +1,5 @@
 #landing {
-  width: 92%;
-  margin: 1em auto 2em auto;
+  padding: 16px;
 }
 
 #landing #paper {
@@ -15,6 +14,7 @@
   margin: 0 .5em 0 0;
   width: 100px;
   height: 100px;
+  flex-shrink: 0;
 }
 
 #landing-name {
@@ -44,4 +44,17 @@
 #landing .icon-style {
   color: white;
   margin-right: .25em;
+  font-size: 1.25em;
+}
+
+@media screen and (min-width: 769px) {
+
+  #landing {
+    padding: 32px 15vw 32px 15vw;
+  }
+
+  #landing #paper {
+    float: left;
+  }
+
 }

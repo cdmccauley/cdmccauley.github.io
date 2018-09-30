@@ -15,7 +15,7 @@ import Footer from './Footer.js';
 import NotFound from './NotFound.js';
 
 // react-router-dom imports
-import { Route, Switch as RouterSwitch } from 'react-router-dom';
+import { Route, Switch as RouterSwitch, Redirect } from 'react-router-dom';
 
 class App extends Component {
 
@@ -43,6 +43,8 @@ class App extends Component {
         <RouterSwitch>
           <Route exact path='/' component={ Landing } />
           <Route path='/portfolio' component={ Portfolio } />
+          <Route path='/resume' component={() => window.location = 'https://mccauley.tech/resume'} />
+          <Route path='/contact' component={() => window.location = 'https://mccauley.tech/contact'} />
           <Route component={ NotFound } />
         </RouterSwitch>
         <Footer />

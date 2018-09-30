@@ -5,8 +5,7 @@
 }
 
 #about-me {
-  margin: auto;
-  padding: 0 16px 16px 16px; /* todo: make responsive (24px @ 768, ...) */
+  padding: 0 16px 16px 16px;
 }
 
 #footer-logo {
@@ -21,7 +20,7 @@
 
 #site-nav {
   background-color: #ccc;
-  padding: 4vw;
+  padding: 16px;
   box-shadow: inset 0 2px 5px 0 #4a4a4a;
 }
 
@@ -37,4 +36,16 @@ ul {
   list-style-type: none;
   padding-left: 0;
   margin-bottom: 0;
+}
+
+@media screen and (min-width: 769px) {
+
+  #about-me {
+    padding: 6px 15vw 16px 15vw;
+  }
+
+  #site-nav {
+    padding: 16px 15vw;
+  }
+
 }

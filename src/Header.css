@@ -20,3 +20,11 @@
 #no-rule {
   color: #333;
 }
+
+@media screen and (min-width: 769px) {
+
+  #toolbar {
+    padding-left: 15vw !important;
+  }
+
+}

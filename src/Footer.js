@@ -18,7 +18,7 @@ class Footer extends Component {
           <hr />
           <Typography id="footer-logo" variant="display1">{ "\{ m \}" }</Typography>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Chris McCauley is a software developer available for hire that lives and studies in the Davis and Salt Lake counties of northern Utah, USA.
           </Typography>
           <div id="social-nav">
             <a href="https://codepen.io/cdmccauley/" target="_blank" rel="noopener noreferrer">CodePen</a>
@@ -36,8 +36,10 @@ class Footer extends Component {
           <ul>
             <li><Link to="/">Home</Link></li>
             <li><Link to="/portfolio">Portfolio</Link></li>
-            <li><Link to="/resume">Resume</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
+            <li><a href="https://mccauley.tech/resume" target="_blank" rel="noopener noreferrer">Resume</a></li>
+            <li><a href="https://mccauley.tech/contact" target="_blank" rel="noopener noreferrer">Contact</a></li>
+            {/* <li><Link to="/resume">Resume</Link></li>
+            <li><Link to="/contact">Contact</Link></li> */}
           </ul>
         </div>
       </div>

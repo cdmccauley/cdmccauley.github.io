@@ -52,7 +52,7 @@ class Header extends Component {
     
     return (
       <AppBar position="static">
-        <Toolbar>
+        <Toolbar id="toolbar">
           <Typography id="title-typography" variant="display1">{ "\{ m \}" }</Typography>
           <IconButton aria-owns={open ? 'menu-appbar' : null } aria-haspopup="true" 
             onClick={this.handleMenu}>
@@ -75,17 +75,21 @@ class Header extends Component {
               </MenuItem>
             </Link>
             
-            <Link to='/resume'>
+            {/* <Link to='/resume'> */}
+            <a href="https://mccauley.tech/resume" target="_blank" rel="noopener noreferrer">
               <MenuItem onClick={this.handleClose} id='menu-resume'>
                 <Typography variant="subheading">Resume</Typography>
               </MenuItem>
-            </Link>
+            </a>
+            {/* </Link> */}
 
-            <Link to='/contact'>
+            {/* <Link to='/contact'> */}
+            <a href="https://mccauley.tech/contact" target="_blank" rel="noopener noreferrer">
               <MenuItem onClick={this.handleClose} id='menu-contact'>
                 <Typography variant="subheading">Contact</Typography>
               </MenuItem>
-            </Link>
+            </a>
+            {/* </Link> */}
 
             <hr />
 
