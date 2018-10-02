@@ -2,6 +2,10 @@
 import React, { Component } from 'react';
 import './Portfolio.css';
 
+// component imports (testing)
+import MarkdownPreviewer from './components/MarkdownPreviewer';
+import QuoteGenerator from './components/QuoteGenerator';
+
 // material imports
 import Typography from '@material-ui/core/Typography';
 import Paper from '@material-ui/core/Paper';
@@ -19,7 +23,7 @@ class Portfolio extends Component {
   render() {
     return (
 
-      <div id="portfolio">
+      <div id="portfolio" >
         <Typography variant="display1" style={{ margin: '.25em 0' }}>Portfolio</Typography>
         <Paper style={{ padding: '.25em 0'}}>
           <Mockup 
@@ -49,6 +53,12 @@ class Portfolio extends Component {
             tabletUri={'http://via.placeholder.com/1080x1440/fff/000'}
             phoneUri={'http://via.placeholder.com/1080x1920/fff/000'} 
           />
+        </Paper>
+        <Paper style={{ margin: '.25em 0' }}>
+          <MarkdownPreviewer />
+        </Paper>
+        <Paper style={{ margin: '.25em 0' }}>
+          <QuoteGenerator />
         </Paper>
       </div>
 
@@ -115,7 +125,7 @@ const Mockup = (props) => {
 
         {/* phone frame */}
         <div style={{ 
-          flexBasis: '10vw', 
+          flexBasis: '10vw',
           backgroundColor: 'black', 
           padding: '1vw .4vw', 
           transform: 'translateX(-150%)', 
