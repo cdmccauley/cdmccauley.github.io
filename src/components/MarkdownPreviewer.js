@@ -55,19 +55,10 @@ class MarkdownPreviewer extends Component {
 		this.clearTb = this.clearTb.bind(this);
 	}
 	
-  /* edit notes: removing: 
-    id "component-wrapper" from root div, 
-    class "lato mb-0" from h1, 
-    id "tag" from first child div
-  */
 	render() {
 		return (
-      <div>
-			  <h1>Markdown Previewer</h1>
-			  <div>
-		  	  <h4 className="lato">Enter Markup to preview output in window below.</h4>
-			    <button onClick={this.clearTb}>Clear</button>
-			  </div>
+      <div style={{ marginBottom: '1em' }}>
+				<button style={{ alignSelf: 'flex-end' }} onClick={this.clearTb}>Clear</button>
         <EditComponent markdown={this.state.markdown} onChange={this.handleChange} />
         <PreviewComponent markdown={this.state.markdown} />
       </div>

@@ -78,7 +78,7 @@ class QuoteGenerator extends Component {
       return <div>Loading...</div>;
     } else {
       return (
-        <div id="quote-box" style={{ padding: 50, paddingTop: 60, backgroundColor: 'lightGray', boxShadow: `2px 2px 1px #888` }}>
+        <div id="quote-box" style={{ padding: 50, paddingTop: 60, backgroundColor: 'lightGray', boxShadow: `2px 2px 1px #888`, marginBottom: '1em' }}>
         	<hr />
         	<div id="text" style={{ marginTop: 25, textAlign: 'justify' }}>
           	{this.state.currentQuote}

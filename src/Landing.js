@@ -20,6 +20,7 @@ class Landing extends Component {
     return (
 
       <div id="landing">
+        <Typography variant="display1" style={{ margin: '.25em 0' }}>Welcome</Typography>
         <Paper id="paper">
           <img src="avatar-full.png" alt="Chris McCauley"></img>
           <div>

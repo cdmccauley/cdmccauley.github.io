@@ -5,6 +5,7 @@ import './Portfolio.css';
 // component imports (testing)
 import MarkdownPreviewer from './components/MarkdownPreviewer';
 import QuoteGenerator from './components/QuoteGenerator';
+import DrumMachine from './components/DrumMachine';
 
 // material imports
 import Typography from '@material-ui/core/Typography';
@@ -13,10 +14,10 @@ import Paper from '@material-ui/core/Paper';
 // fontawesome imports
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHtml5, faCss3, faPhp } from '@fortawesome/free-brands-svg-icons';
+import { faHtml5, faCss3, faPhp, faReact, faNpm, faJs } from '@fortawesome/free-brands-svg-icons';
 import { faDatabase } from '@fortawesome/free-solid-svg-icons';
 
-library.add(faHtml5, faCss3, faPhp, faDatabase);
+library.add(faHtml5, faCss3, faPhp, faDatabase, faNpm, faJs);
 
 class Portfolio extends Component {
 
@@ -25,40 +26,81 @@ class Portfolio extends Component {
 
       <div id="portfolio" >
         <Typography variant="display1" style={{ margin: '.25em 0' }}>Portfolio</Typography>
+        <Typography variant="display1" style={{ fontSize: '1.5rem', margin: '1.75em 0 .25em 0' }}>Websites</Typography>
         <Paper style={{ padding: '.25em 0'}}>
           <Mockup 
+            projectUrl={'https://tech-mccauley-ggg.herokuapp.com/'} 
             projectTitle={'Git Gud Games'}
             projectTech={[faPhp, faDatabase, faHtml5, faCss3]} 
             projectDescription={`Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
               sed do eiusmod tempor incididunt ut labore et dolore magna aliqual.`}
-            laptopUri={'http://via.placeholder.com/1920x1080/fff/000'} 
-            tabletUri={'http://via.placeholder.com/1080x1440/fff/000'}
-            phoneUri={'http://via.placeholder.com/1080x1920/fff/000'} 
+            laptopUri={'assets/gggLaptopCrop.PNG'} 
+            tabletUri={'assets/gggTabletCrop.PNG'}
+            phoneUri={'assets/gggPhoneCrop.PNG'} 
           />
           <Mockup 
+            projectUrl={'https://codepen.io/cdmccauley/full/pdXaGK/'} 
             projectTitle={'Grace Hopper'}
             projectTech={[faHtml5, faCss3]} 
             projectDescription={`Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
               sed do eiusmod tempor incididunt ut labore et dolore magna aliqual.`}
-            laptopUri={'http://via.placeholder.com/1920x1080/fff/000'} 
-            tabletUri={'http://via.placeholder.com/1080x1440/fff/000'}
-            phoneUri={'http://via.placeholder.com/1080x1920/fff/000'} 
+            laptopUri={'assets/ghLaptopCrop.PNG'} 
+            tabletUri={'assets/ghTabletCrop.PNG'}
+            phoneUri={'assets/ghPhoneCrop.PNG'} 
           />
           <Mockup 
+            projectUrl={'https://mccauley.tech/portfolio-content/easy-astronomy'} 
             projectTitle={'Easy Astronomy'}
             projectTech={[faHtml5, faCss3]} 
             projectDescription={`Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
               sed do eiusmod tempor incididunt ut labore et dolore magna aliqual.`}
-            laptopUri={'http://via.placeholder.com/1920x1080/fff/000'} 
-            tabletUri={'http://via.placeholder.com/1080x1440/fff/000'}
-            phoneUri={'http://via.placeholder.com/1080x1920/fff/000'} 
+            laptopUri={'assets/eaLaptopCrop.PNG'} 
+            tabletUri={'assets/eaTabletCrop.PNG'}
+            phoneUri={'assets/eaPhoneCrop.PNG'} 
           />
         </Paper>
-        <Paper style={{ margin: '.25em 0' }}>
+
+
+
+        <Typography variant="display1" style={{ fontSize: '1.5rem', margin: '2em 0 .25em 0' }}>Components</Typography>
+        <Paper>
+          <div style={{ margin: '.25em 13% 1em 13%' }}>
+            <Typography variant="headline" style={{ color: '#88e234' }}>Markdown Previewer</Typography>
+            <div>
+              <FontAwesomeIcon icon={ faReact } style={{ color: '#5c9ccf', marginRight: '.25em', fontSize: '1.25em'}} />
+              <FontAwesomeIcon icon={ faNpm } style={{ color: '#5c9ccf', marginRight: '.25em', fontSize: '1.25em'}} />
+              <FontAwesomeIcon icon={ faJs } style={{ color: '#5c9ccf', marginRight: '.25em', fontSize: '1.25em'}} />
+              <FontAwesomeIcon icon={ faHtml5 } style={{ color: '#5c9ccf', marginRight: '.25em', fontSize: '1.25em'}} />
+              <FontAwesomeIcon icon={ faCss3 } style={{ color: '#5c9ccf', marginRight: '.25em', fontSize: '1.25em'}} />
+            </div>
+            <Typography variant="subheading" align={'justify'} style={{ marginBottom: '1em' }}>{`Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqual.`}</Typography>
+          </div>
           <MarkdownPreviewer />
-        </Paper>
-        <Paper style={{ margin: '.25em 0' }}>
+          <div style={{ margin: '.25em 13% 1em 13%' }}>
+            <Typography variant="headline" style={{ color: '#88e234' }}>Quote Generator</Typography>
+            <div>
+              <FontAwesomeIcon icon={ faReact } style={{ color: '#5c9ccf', marginRight: '.25em', fontSize: '1.25em'}} />
+              <FontAwesomeIcon icon={ faJs } style={{ color: '#5c9ccf', marginRight: '.25em', fontSize: '1.25em'}} />
+              <FontAwesomeIcon icon={ faHtml5 } style={{ color: '#5c9ccf', marginRight: '.25em', fontSize: '1.25em'}} />
+              <FontAwesomeIcon icon={ faCss3 } style={{ color: '#5c9ccf', marginRight: '.25em', fontSize: '1.25em'}} />
+            </div>
+            <Typography variant="subheading" align={'justify'} style={{ marginBottom: '1em' }}>{`Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqual.`}</Typography>
+          </div>
           <QuoteGenerator />
+          <div style={{ margin: '.25em 13% 1em 13%' }}>
+            <Typography variant="headline" style={{ color: '#88e234' }}>Drum Machine</Typography>
+            <div>
+              <FontAwesomeIcon icon={ faReact } style={{ color: '#5c9ccf', marginRight: '.25em', fontSize: '1.25em'}} />
+              <FontAwesomeIcon icon={ faJs } style={{ color: '#5c9ccf', marginRight: '.25em', fontSize: '1.25em'}} />
+              <FontAwesomeIcon icon={ faHtml5 } style={{ color: '#5c9ccf', marginRight: '.25em', fontSize: '1.25em'}} />
+              <FontAwesomeIcon icon={ faCss3 } style={{ color: '#5c9ccf', marginRight: '.25em', fontSize: '1.25em'}} />
+            </div>
+            <Typography variant="subheading" align={'justify'} style={{ marginBottom: '1em' }}>{`Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqual.`}</Typography>
+          </div>
+          <DrumMachine />
         </Paper>
       </div>
 
@@ -68,7 +110,7 @@ class Portfolio extends Component {
 
 const Mockup = (props) => {
   // deconstruct props for mockup images uri
-  const { projectTitle, projectTech, projectDescription, laptopUri, tabletUri, phoneUri } = props;
+  const { projectUrl, projectTitle, projectTech, projectDescription, laptopUri, tabletUri, phoneUri } = props;
 
   // creates an array of icon elements
   const iconBar = projectTech.map((techIcon) => {
@@ -78,8 +120,10 @@ const Mockup = (props) => {
   // divs create device frames to display screenshots of browsers displaying live sites
   return (
     <div>
+      <a href={ projectUrl } target="_blank" rel="noopener noreferrer">
       <Typography style={{ 
         marginLeft: '14%', 
+        marginRight: '14%',
         color: '#88e234' }} variant="headline">{ projectTitle }</Typography>
 
       <div style={{ 
@@ -137,6 +181,7 @@ const Mockup = (props) => {
         </div>
 
       </div>
+      </a>
 
       {/* icon bar */}
       <div style={{ margin: '.5em 0 0 13%' }}>{ iconBar }</div>
