@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/ups-rate-live/precache-manifest.47a0823442e465cfc1fbaf490c92f237.js"
+  "/ups-rate-live/precache-manifest.9e14a48c0a9f042d360bf01151caaa4a.js"
 );
 
 workbox.clientsClaim();
